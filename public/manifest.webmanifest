@@ -1,0 +1,21 @@
+{
+  "name": "Mochi Snake 3D Garden",
+  "short_name": "MochiSnake3D",
+  "description": "Cozy Japanese Style 3D Diorama Snake Simulation",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#bde0fe",
+  "theme_color": "#bde0fe",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

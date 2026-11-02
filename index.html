@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Mochi Snake 3D Garden</title>
+  <meta name="description" content="Cozy Japanese Style 3D Diorama Snake Simulation">
+  <meta name="theme-color" content="#bde0fe">
+
+  <!-- OpenGraph and Twitter Metadata (Compact 1:1 Square) -->
+  <meta property="og:title" content="Mochi Snake 3D Garden">
+  <meta property="og:description" content="Cozy Japanese Style 3D Diorama Snake Simulation">
+  <meta property="og:image" content="/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mochi Snake 3D Garden">
+  <meta name="twitter:description" content="Cozy Japanese Style 3D Diorama Snake Simulation">
+  <meta name="twitter:image" content="/og-image.png">
+
+  <!-- Favicon and PWA -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/styles/style.css">
+</head>
+<body>
+  <div id="canvas-container"></div>
+
+  <div id="ui-overlay">
+    <div id="hud-top">
+      <div class="hud-pill">
+        <span class="hud-label">APPLES</span>
+        <span id="score-val" class="hud-val gold">00000</span>
+      </div>
+      <div class="hud-pill">
+        <span class="hud-label">RECORD</span>
+        <span id="best-val" class="hud-val matcha">00000</span>
+      </div>
+      <div class="hud-pill">
+        <span class="hud-label">GARDEN</span>
+        <span id="grid-val" class="hud-val berry">16x16</span>
+      </div>
+    </div>
+
+    <div id="hud-bottom">
+      <div class="info-pill">&#x2728; COZY GARDEN &middot; DRAG TO EXPLORE</div>
+      <button id="btn-turntable" class="hud-btn" aria-label="Toggle Orbit">PAUSE ORBIT</button>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
